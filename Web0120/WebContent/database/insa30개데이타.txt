@@ -1,0 +1,310 @@
+drop table guest ;
+
+create  table  guest(
+  sabun number(4) primary key,
+  name varchar2(10) not null,
+  title  varchar2(16) not null,
+  nalja date not null,
+  pay number(3) not null 
+);
+
+
+commit ;
+select  * from  guest ;
+delete  from   guest  ; 
+commit;
+
+insert  into  guest   values(4400, 'zero',  'guest0',   sysdate, 40) ;
+insert  into  guest   values(4411, 'first',  'guest1',  sysdate, 41) ;
+insert  into  guest   values(4422, 'two',   'guest2', sysdate, 42) ;
+insert  into  guest   values(4433, 'three', 'guest3',   sysdate, 43) ;
+insert  into  guest   values(4444, 'aaa4',   'guest4', sysdate, 44) ;
+insert  into  guest   values(4455, 'aaa5',  'guest5',  sysdate, 45) ;
+insert  into guest   values(4466, 'aaa6',   'guest6', sysdate, 46) ;
+insert  into  guest   values(4477, 'aaa7',   'guest7',   sysdate, 47) ;
+insert  into  guest   values(4488, 'nine',  'guest8',   sysdate, 48) ;
+insert  into  guest   values(4499, 'ten',    'guest9', sysdate, 49) ;
+
+insert  into  guest  values(5500, 'apple',   'board0',  sysdate, 50) ;
+insert  into  guest   values(5511, 'banana',  'board1',  sysdate, 51) ;
+insert  into  guest   values(5522, 'cherry',  'board2',  sysdate, 52) ;
+insert  into  guest   values(5533, 'orange',   'board3', sysdate, 53) ;
+insert  into  guest   values(5544, 'mango',  'board4',   sysdate, 54) ;
+insert  into  guest   values(5555, 'peach',  'board5', sysdate, 55) ;
+insert  into  guest   values(5566, 'bbb6',  'board6',  sysdate, 56) ;
+insert  into  guest   values(5577, 'bbb7',  'board7',   sysdate, 57) ;
+insert  into  guest  values(5588, 'bbb8',  'board8',   sysdate, 58) ;
+insert  into  guest   values(5599, 'bbb9',  'board9',  sysdate, 59) ;
+
+insert  into  guest   values(6600, 'lee',   'note0',  sysdate, 60) ;
+insert  into  guest   values(6611, 'kim',  'note1',  sysdate, 61) ;
+insert  into  guest   values(6622, 'goo',   'note2',  sysdate, 62) ;
+insert  into  guest   values(6633, 'park',  'note3',  sysdate, 63) ;
+insert  into  guest   values(6644, 'ccc4',   'note4',  sysdate, 64) ;
+insert  into  guest   values(6655, 'ccc5',  'note5',  sysdate, 65) ;
+insert  into  guest   values(6666, 'red',   'note6',  sysdate, 66) ;
+insert  into  guest  values(6677, 'green',  'note7',  sysdate, 67) ;
+insert  into  guest   values(6688, 'blue',  'note8',  sysdate, 68) ;
+insert  into  guest   values(6699, 'last',  'note9',  sysdate, 69) ;
+
+
+insert  into  guest   values(7700, 'zero',  'book0',  sysdate, 40) ;
+insert  into  guest   values(7711, 'first', 'book1',  sysdate, 41) ;
+insert  into  guest   values(7722, 'two',  'book2',  sysdate, 42) ;
+insert  into  guest  values(7733, 'three', 'book3',  sysdate, 43) ;
+insert  into  guest   values(7744, 'aaa4',  'book4',  sysdate, 44) ;
+insert  into  guest   values(7755, 'aaa5', 'book5',  sysdate, 45) ;
+insert  into  guest  values(7766, 'aaa6',  'book6',  sysdate, 46) ;
+insert  into  guest   values(7777, 'aaa7', 'book7',  sysdate, 47) ;
+insert  into  guest  values(7788, 'nine',   'book8',  sysdate, 48) ;
+insert  into  guest   values(7799, 'ten',   'book9',  sysdate, 49) ;
+
+insert  into  guest   values(8800, 'apple',  'bank0',   sysdate, 50) ;
+insert  into  guest   values(8811, 'banana',  'bank1',   sysdate, 51) ;
+insert  into  guest   values(8822, 'cherry',   'bank2',   sysdate, 52) ;
+insert  into  guest   values(8833, 'orange', 'bank3',   sysdate, 53) ;
+insert  into  guest   values(8844, 'mango', 'bank4',   sysdate, 54) ;
+insert  into  guest   values(8855, 'peach', 'bank5',   sysdate, 55) ;
+insert  into  guest   values(8866, 'bbb6',  'bank6',   sysdate, 56) ;
+insert  into  guest   values(8877, 'bbb7',  'bank7',   sysdate, 57) ;
+insert  into  guest   values(8888, 'bbb8',   'bank8',   sysdate, 58) ;
+insert  into  guest   values(8899, 'bbb9',   'bank9',   sysdate, 59) ;
+
+insert  into  guest   values(9900, 'lee',   'last0',  sysdate, 60) ;
+insert  into  guest   values(9911, 'kim',  'last1',  sysdate, 61) ;
+insert  into  guest   values(9922, 'goo',  'last2',  sysdate, 62) ;
+insert  into  guest   values(9933, 'park',  'last3',  sysdate, 63) ;
+insert  into  guest   values(9944, 'ccc4',  'last4',  sysdate, 64) ;
+insert  into  guest   values(9955, 'ccc5',  'last5',  sysdate, 65) ;
+insert  into  guest   values(9966, 'red',  'last6',   sysdate, 66) ;
+insert  into  guest   values(9977, 'green', 'last7',  sysdate, 67) ;
+insert  into  guest   values(9988, 'blue',  'last8',  sysdate, 68) ;
+insert  into  guest   values(9999, 'last',  'last9',  sysdate, 69) ;
+
+insert  into  guest   values(4100, 'zero',  'aa0',   sysdate, 40) ;
+insert  into  guest   values(4111, 'first',  'aa1',  sysdate, 41) ;
+insert  into  guest   values(4122, 'two',   'aa2', sysdate, 42) ;
+insert  into  guest   values(4133, 'three', 'aa3',   sysdate, 43) ;
+insert  into  guest   values(4244, 'lee4',   'aa4', sysdate, 44) ;
+insert  into  guest   values(4155, 'lee5',  'aa5',  sysdate, 45) ;
+insert  into guest   values(4166, 'kim6',   'aa6', sysdate, 46) ;
+insert  into  guest   values(4177, 'kim7',   'aa7',   sysdate, 47) ;
+insert  into  guest   values(4188, 'park',   'aa8',   sysdate, 48) ;
+insert  into  guest   values(4199, 'choi',    'aa9', sysdate, 49) ;
+
+insert  into  guest  values(5100, 'color0',   'bb0',  sysdate, 50) ;
+insert  into  guest   values(5111, 'brown1',  'bb1',  sysdate, 51) ;
+insert  into  guest   values(5122, 'yellow2',  'bb2',  sysdate, 52) ;
+insert  into  guest   values(5133, 'color3',   'bb3', sysdate, 53) ;
+insert  into  guest   values(5144, 'pink4',  'bb4',   sysdate, 54) ;
+insert  into  guest   values(5155, 'red5',  'bb5', sysdate, 55) ;
+insert  into  guest   values(5166, 'green6',  'bb6',  sysdate, 56) ;
+insert  into  guest   values(5177, 'blue7',  'bb7',   sysdate, 57) ;
+insert  into  guest   values(5188,  'black8',  'bb8',   sysdate, 58) ;
+insert  into  guest   values(5199, 'white9',  'bb9',  sysdate, 59) ;
+
+commit;
+set  pagesize  950 ;
+set  linesize   950 ;
+select  * from guest ;
+select  rownum , sabun, name, title, nalja, pay  from guest ;
+select  rownum as rn , sabun, name, title, nalja, pay  from guest ;
+
+ select * from
+   (select rownum as  rn, sabun, name, title, nalja, pay from guest )
+   where rn between  11 and 20 ;
+
+commit;
+select  * from guest order by sabun ; 
+
+
+
+
+
+
+
+insert  into  guest   values(4490, 'me',  'happy',   sysdate, 40) ;
+insert  into  guest   values(4491, 'first',  'guest1',  sysdate, 41) ;
+insert  into  guest   values(4492, 'two',   'guest2', sysdate, 42) ;
+insert  into  guest   values(4493, 'three', 'guest3',   sysdate, 43) ;
+insert  into  guest   values(4494, 'aaa4',   'guest4', sysdate, 44) ;
+insert  into  guest   values(4495, 'aaa5',  'guest5',  sysdate, 45) ;
+insert  into guest   values(4496, 'aaa6',   'guest6', sysdate, 46) ;
+insert  into  guest   values(4497, 'aaa7',   'guest7',   sysdate, 47) ;
+insert  into  guest   values(4498, 'nine',  'guest8',   sysdate, 48) ;
+insert  into  guest   values(4499, 'me',    'happy', sysdate, 49) ;
+
+insert  into  guest  values(5590, 'asp',   'asp',  sysdate, 50) ;
+insert  into  guest   values(5591, 'banana',  'board1',  sysdate, 51) ;
+insert  into  guest   values(5592, 'cherry',  'board2',  sysdate, 52) ;
+insert  into  guest   values(5593, 'orange',   'board3', sysdate, 53) ;
+insert  into  guest   values(5594, 'mango',  'board4',   sysdate, 54) ;
+insert  into  guest   values(5595, 'peach',  'board5', sysdate, 55) ;
+insert  into  guest   values(5596, 'bbb6',  'board6',  sysdate, 56) ;
+insert  into  guest   values(5597, 'bbb7',  'board7',   sysdate, 57) ;
+insert  into  guest  values(5598, 'bbb8',  'board8',   sysdate, 58) ;
+insert  into  guest   values(5519, 'php',  'php',  sysdate, 59) ;
+
+insert  into  guest   values(6690, 'lee',   'lee',  sysdate, 60) ;
+insert  into  guest   values(6691, 'kim',  'note1',  sysdate, 61) ;
+insert  into  guest   values(6692, 'goo',   'note2',  sysdate, 62) ;
+insert  into  guest   values(6693, 'park',  'note3',  sysdate, 63) ;
+insert  into  guest   values(6694, 'ccc4',   'note4',  sysdate, 64) ;
+insert  into  guest   values(6695, 'ccc5',  'note5',  sysdate, 65) ;
+insert  into  guest   values(6696, 'red',   'note6',  sysdate, 66) ;
+insert  into  guest  values(6697, 'green',  'note7',  sysdate, 67) ;
+insert  into  guest   values(6698, 'blue',  'note8',  sysdate, 68) ;
+insert  into  guest   values(6619, 'last',  'last',  sysdate, 69) ;
+
+
+insert  into  guest   values(7790, kb',  'kb',  sysdate, 40) ;
+insert  into  guest   values(7791, 'first', 'book1',  sysdate, 41) ;
+insert  into  guest   values(7792, 'two',  'book2',  sysdate, 42) ;
+insert  into  guest  values(7793, 'three', 'book3',  sysdate, 43) ;
+insert  into  guest   values(7794, 'aaa4',  'book4',  sysdate, 44) ;
+insert  into  guest   values(7795, 'aaa5', 'book5',  sysdate, 45) ;
+insert  into  guest  values(7796, 'aaa6',  'book6',  sysdate, 46) ;
+insert  into  guest   values(7797, 'aaa7', 'book7',  sysdate, 47) ;
+insert  into  guest  values(7798, 'nine',   'book8',  sysdate, 48) ;
+insert  into  guest   values(7719, 'bank',   'bank',  sysdate, 49) ;
+
+insert  into  guest   values(8890, 'hb',  'hb',   sysdate, 50) ;
+insert  into  guest   values(8891, 'banana',  'bank1',   sysdate, 51) ;
+insert  into  guest   values(8892, 'cherry',   'bank2',   sysdate, 52) ;
+insert  into  guest   values(8893, 'orange', 'bank3',   sysdate, 53) ;
+insert  into  guest   values(8894, 'mango', 'bank4',   sysdate, 54) ;
+insert  into  guest   values(8895, 'peach', 'bank5',   sysdate, 55) ;
+insert  into  guest   values(8896, 'bbb6',  'bank6',   sysdate, 56) ;
+insert  into  guest   values(8897, 'bbb7',  'bank7',   sysdate, 57) ;
+insert  into  guest   values(8898, 'bbb8',   'bank8',   sysdate, 58) ;
+insert  into  guest   values(8819, 'desk',   'desk',   sysdate, 59) ;
+
+insert  into  guest   values(9990, 'rim',   'rim',  sysdate, 60) ;
+insert  into  guest   values(9991, 'kim',  'last1',  sysdate, 61) ;
+insert  into  guest   values(9992, 'goo',  'last2',  sysdate, 62) ;
+insert  into  guest   values(9993, 'park',  'last3',  sysdate, 63) ;
+insert  into  guest   values(9994, 'ccc4',  'last4',  sysdate, 64) ;
+insert  into  guest   values(9995, 'ccc5',  'last5',  sysdate, 65) ;
+insert  into  guest   values(9996, 'red',  'last6',   sysdate, 66) ;
+insert  into  guest   values(9997, 'green', 'last7',  sysdate, 67) ;
+insert  into  guest   values(9998, 'blue',  'last8',  sysdate, 68) ;
+insert  into  guest   values(9919, 'young',  'young',  sysdate, 69) ;
+
+insert  into  guest   values(4900, 'zero',  'zero',   sysdate, 40) ;
+insert  into  guest   values(4911, 'first',  'aa1',  sysdate, 41) ;
+insert  into  guest   values(4922, 'two',   'aa2', sysdate, 42) ;
+insert  into  guest   values(4933, 'three', 'aa3',   sysdate, 43) ;
+insert  into  guest   values(4944, 'lee4',   'aa4', sysdate, 44) ;
+insert  into  guest   values(4955, 'lee5',  'aa5',  sysdate, 45) ;
+insert  into guest   values(4196, 'kim6',   'aa6', sysdate, 46) ;
+insert  into  guest   values(4977, 'kim7',   'aa7',   sysdate, 47) ;
+insert  into  guest   values(4988, 'park',   'aa8',   sysdate, 48) ;
+insert  into  guest   values(4999, 'choi',    'choi', sysdate, 49) ;
+
+insert  into  guest  values(5900, 'red',   'red',  sysdate, 50) ;
+insert  into  guest   values(5911, 'brown1',  'bb1',  sysdate, 51) ;
+insert  into  guest   values(5922, 'yellow2',  'bb2',  sysdate, 52) ;
+insert  into  guest   values(5933, 'color3',   'bb3', sysdate, 53) ;
+insert  into  guest   values(5944, 'pink4',  'bb4',   sysdate, 54) ;
+insert  into  guest   values(5955, 'red5',  'bb5', sysdate, 55) ;
+insert  into  guest   values(5966, 'green6',  'bb6',  sysdate, 56) ;
+insert  into  guest   values(5977, 'blue7',  'bb7',   sysdate, 57) ;
+insert  into  guest   values(5988,  'black8',  'bb8',   sysdate, 58) ;
+insert  into  guest   values(5999, 'white',  'white',  sysdate, 59) ;
+
+
+commit;
+select  * from guest order by sabun ; 
+
+
+insert  into  guest   values(4390, 'me',  'happy',   sysdate, 40) ;
+insert  into  guest   values(4391, 'first',  'guest1',  sysdate, 41) ;
+insert  into  guest   values(4392, 'two',   'guest2', sysdate, 42) ;
+insert  into  guest   values(4393, 'three', 'guest3',   sysdate, 43) ;
+insert  into  guest   values(4394, 'aaa4',   'guest4', sysdate, 44) ;
+insert  into  guest   values(4395, 'aaa5',  'guest5',  sysdate, 45) ;
+insert  into guest   values(4396, 'aaa6',   'guest6', sysdate, 46) ;
+insert  into  guest   values(4397, 'aaa7',   'guest7',   sysdate, 47) ;
+insert  into  guest   values(4398, 'nine',  'guest8',   sysdate, 48) ;
+insert  into  guest   values(4399, 'me',    'happy', sysdate, 49) ;
+
+insert  into  guest  values(5390, 'asp',   'asp',  sysdate, 50) ;
+insert  into  guest   values(5391, 'banana',  'board1',  sysdate, 51) ;
+insert  into  guest   values(5392, 'cherry',  'board2',  sysdate, 52) ;
+insert  into  guest   values(5393, 'orange',   'board3', sysdate, 53) ;
+insert  into  guest   values(5394, 'mango',  'board4',   sysdate, 54) ;
+insert  into  guest   values(5395, 'peach',  'board5', sysdate, 55) ;
+insert  into  guest   values(5396, 'bbb6',  'board6',  sysdate, 56) ;
+insert  into  guest   values(5397, 'bbb7',  'board7',   sysdate, 57) ;
+insert  into  guest  values(5398, 'bbb8',  'board8',   sysdate, 58) ;
+insert  into  guest   values(5319, 'php',  'php',  sysdate, 59) ;
+
+insert  into  guest   values(6390, 'lee',   'lee',  sysdate, 60) ;
+insert  into  guest   values(6391, 'kim',  'note1',  sysdate, 61) ;
+insert  into  guest   values(6392, 'goo',   'note2',  sysdate, 62) ;
+insert  into  guest   values(6393, 'park',  'note3',  sysdate, 63) ;
+insert  into  guest   values(6394, 'ccc4',   'note4',  sysdate, 64) ;
+insert  into  guest   values(6395, 'ccc5',  'note5',  sysdate, 65) ;
+insert  into  guest   values(6396, 'red',   'note6',  sysdate, 66) ;
+insert  into  guest  values(6397, 'green',  'note7',  sysdate, 67) ;
+insert  into  guest   values(6398, 'blue',  'note8',  sysdate, 68) ;
+insert  into  guest   values(6319, 'last',  'last',  sysdate, 69) ;
+
+
+insert  into  guest   values(7390, kb',  'kb',  sysdate, 40) ;
+insert  into  guest   values(7391, 'first', 'book1',  sysdate, 41) ;
+insert  into  guest   values(7392, 'two',  'book2',  sysdate, 42) ;
+insert  into  guest  values(7393, 'three', 'book3',  sysdate, 43) ;
+insert  into  guest   values(7394, 'aaa4',  'book4',  sysdate, 44) ;
+insert  into  guest   values(7395, 'aaa5', 'book5',  sysdate, 45) ;
+insert  into  guest  values(7396, 'aaa6',  'book6',  sysdate, 46) ;
+insert  into  guest   values(7397, 'aaa7', 'book7',  sysdate, 47) ;
+insert  into  guest  values(7398, 'nine',   'book8',  sysdate, 48) ;
+insert  into  guest   values(7319, 'bank',   'bank',  sysdate, 49) ;
+
+insert  into  guest   values(83890, 'hb',  'hb',   sysdate, 50) ;
+insert  into  guest   values(8391, 'banana',  'bank1',   sysdate, 51) ;
+insert  into  guest   values(8392, 'cherry',   'bank2',   sysdate, 52) ;
+insert  into  guest   values(8393, 'orange', 'bank3',   sysdate, 53) ;
+insert  into  guest   values(8394, 'mango', 'bank4',   sysdate, 54) ;
+insert  into  guest   values(8395, 'peach', 'bank5',   sysdate, 55) ;
+insert  into  guest   values(8396, 'bbb6',  'bank6',   sysdate, 56) ;
+insert  into  guest   values(8397, 'bbb7',  'bank7',   sysdate, 57) ;
+insert  into  guest   values(8398, 'bbb8',   'bank8',   sysdate, 58) ;
+insert  into  guest   values(8319, 'desk',   'desk',   sysdate, 59) ;
+
+insert  into  guest   values(9390, 'rim',   'rim',  sysdate, 60) ;
+insert  into  guest   values(9391, 'kim',  'last1',  sysdate, 61) ;
+insert  into  guest   values(9392, 'goo',  'last2',  sysdate, 62) ;
+insert  into  guest   values(9393, 'park',  'last3',  sysdate, 63) ;
+insert  into  guest   values(9394, 'ccc4',  'last4',  sysdate, 64) ;
+insert  into  guest   values(9395, 'ccc5',  'last5',  sysdate, 65) ;
+insert  into  guest   values(9396, 'red',  'last6',   sysdate, 66) ;
+insert  into  guest   values(9397, 'green', 'last7',  sysdate, 67) ;
+insert  into  guest   values(9398, 'blue',  'last8',  sysdate, 68) ;
+insert  into  guest   values(9319, 'young',  'young',  sysdate, 69) ;
+
+insert  into  guest   values(4300, 'zero',  'zero',   sysdate, 40) ;
+insert  into  guest   values(4311, 'first',  'aa1',  sysdate, 41) ;
+insert  into  guest   values(4322, 'two',   'aa2', sysdate, 42) ;
+insert  into  guest   values(4333, 'three', 'aa3',   sysdate, 43) ;
+insert  into  guest   values(4344, 'lee4',   'aa4', sysdate, 44) ;
+insert  into  guest   values(4355, 'lee5',  'aa5',  sysdate, 45) ;
+insert  into guest   values(4396, 'kim6',   'aa6', sysdate, 46) ;
+insert  into  guest   values(4377, 'kim7',   'aa7',   sysdate, 47) ;
+insert  into  guest   values(4388, 'park',   'aa8',   sysdate, 48) ;
+insert  into  guest   values(4399, 'choi',    'choi', sysdate, 49) ;
+
+insert  into  guest  values(5300, 'red',   'red',  sysdate, 50) ;
+insert  into  guest   values(5311, 'brown1',  'bb1',  sysdate, 51) ;
+insert  into  guest   values(5322, 'yellow2',  'bb2',  sysdate, 52) ;
+insert  into  guest   values(5333, 'color3',   'bb3', sysdate, 53) ;
+insert  into  guest   values(5344, 'pink4',  'bb4',   sysdate, 54) ;
+insert  into  guest   values(5355, 'red5',  'bb5', sysdate, 55) ;
+insert  into  guest   values(5366, 'green6',  'bb6',  sysdate, 56) ;
+insert  into  guest   values(5377, 'blue7',  'bb7',   sysdate, 57) ;
+insert  into  guest   values(5388,  'black8',  'bb8',   sysdate, 58) ;
+insert  into  guest   values(5399, 'white',  'white',  sysdate, 59) ;
+
+commit;
+select  * from guest order by sabun ; 

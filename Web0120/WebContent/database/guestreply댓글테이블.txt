@@ -1,0 +1,38 @@
+시작 =>  네모난박스  cmd 
+C:/Users/hb> sqlplus   system/oracle
+SQL> set linesize 900 ;
+SQL> set pagesize 900 ;
+SQL> select   *  from guest   ; 
+
+select  * from  user_sequences ;
+ drop   sequence  guestreply_seq ;
+
+ drop  table  guestreply ;
+ create  sequence  guestreply_seq ;  
+
+ create  table guestreply  (    
+        num          number(4) primary key ,  
+        writer        varchar2(20) not null  ,
+        content     varchar2(20) not null  ,
+        sabun       number(4)   
+ ) ; 
+
+commit ;
+select  * from  guestreply ;
+
+ insert into guest values( 2234, 'latte', 'coffee', sysdate,  97) ;
+ insert into guestreply values(  guestreply_seq.nextVal, 'me',  'jsp',  2234) ;
+ insert into guestreply values(  guestreply_seq.nextVal, 'you',  'php',  2234) ;
+ insert into guestreply values(   guestreply_seq.nextVal, 'them',  'asp',  2234) ;
+ insert into guestreply values(   guestreply_seq.nextVal, 'we',  'iphone',  2234) ;
+commit ;
+select  * from  guestreply ;
+select   count(*)  as cnt  from  guestreply  where  sabun=2234 ;
+
+ insert into guest values( 4100, 'apple', 'fruit', sysdate,  97) ;
+ insert into guestreply values(  guestreply_seq.nextVal, 'bc',  'card',  4100) ;
+ insert into guestreply values(   guestreply_seq.nextVal, 'kb',  'bank',  4100) ;
+ insert into guestreply values(   guestreply_seq.nextVal, 'gugu',  'popo',  4100) ;
+
+commit ;
+select  * from  guestreply ;

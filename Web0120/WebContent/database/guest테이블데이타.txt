@@ -1,0 +1,16 @@
+drop table guest ;
+
+create  table  guest(
+  sabun number(4) primary key,
+  name varchar2(10) not null,
+  title  varchar2(16) not null,
+  nalja date not null,
+  pay number(3) not null 
+);
+
+commit ;
+insert  into  guest   values(1100, 'zero',  'zero', sysdate, 97) ;
+insert  into  guest   values(2211, 'first',  'one', sysdate, 95) ;
+
+commit;
+select  * from guest order by sabun ; 
